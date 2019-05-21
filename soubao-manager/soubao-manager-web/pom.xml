@@ -7,4 +7,40 @@
   </parent>
   <artifactId>soubao-manager-web</artifactId>
   <packaging>war</packaging>
+  <dependencies>
+		   <dependency>
+		         <groupId>com.soubao</groupId>
+		        <artifactId>soubao-manager-servive</artifactId>
+		      <version>0.0.1-SNAPSHOT</version>
+		    </dependency>
+            <dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-webmvc</artifactId>
+			</dependency>
+			<!-- <dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-jdbc</artifactId>
+			</dependency> -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-aspects</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context-support</artifactId>
+			</dependency>
+			<!-- Jackson Json处理工具包 -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+			</dependency>
+  </dependencies>
 </project>

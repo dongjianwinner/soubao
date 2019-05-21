@@ -7,7 +7,8 @@
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
 	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
-
+  <!-- 包扫描器，扫描带@Repository注解的类 -->
+	<context:component-scan base-package="com.soubao.dao"></context:component-scan>
 	<!-- 数据库连接池 -->
 	<!-- 加载配置文件 -->
 	<context:property-placeholder location="classpath:properties/*.properties" />
@@ -31,6 +32,4 @@
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.soubao.mapper" />
 	</bean>
-	<!-- 包扫描器，扫描带@Repository注解的类 -->
-	<context:component-scan base-package="com.soubao.dao"></context:component-scan>
 </beans>

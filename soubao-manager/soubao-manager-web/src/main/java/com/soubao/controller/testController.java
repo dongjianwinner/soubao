@@ -14,7 +14,7 @@ import com.soubao.serviceImpl.TestServiceImpl;
 @Controller
 public class testController {
 	@Autowired
-	private TestServiceImpl testService;
+	public TestServiceImpl testService;
 	
 	@RequestMapping("/soubao/test")
 	@ResponseBody
@@ -30,9 +30,5 @@ public class testController {
 	public void setTestService(TestServiceImpl testService) {
 		this.testService = testService;
 	}
-
-	
-	
-	
 
 }

@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.soubao.pojo.TbItem;
-import com.soubao.service.TestService;
 import com.soubao.serviceImpl.TestServiceImpl;
 
 @Controller
